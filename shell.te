@@ -91,3 +91,4 @@ neverallow shell file_type:file link;
 allow shell proc_interrupts:file r_file_perms;
 allow shell proc_stat:file r_file_perms;
 allow shell proc_timer:file r_file_perms;
+allow shell proc_zoneinfo:file r_file_perms;
