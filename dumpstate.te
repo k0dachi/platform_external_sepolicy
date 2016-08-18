@@ -86,6 +86,7 @@ allow dumpstate shell_exec:file rx_file_perms;
 allow dumpstate zygote_exec:file rx_file_perms;
 # For art.
 allow dumpstate dalvikcache_data_file:file execute;
+auditallow dumpstate dalvikcache_data_file:file execute;
 allow dumpstate dalvikcache_data_file:lnk_file r_file_perms;
 
 # Dumpstate calls screencap, which grabs a screenshot. Needs gpu access

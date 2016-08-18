@@ -62,6 +62,8 @@ unix_socket_connect(bluetooth, sap_uim, rild)
 # /data/data/com.android.shell/files/bugreports/bugreport-*.
 allow bluetooth shell_data_file:file read;
 
+auditallow bluetooth dalvikcache_data_file:file execute;
+
 ###
 ### Neverallow rules
 ###

@@ -7,6 +7,8 @@ binder_service(nfc)
 # Set NFC properties
 set_prop(nfc, nfc_prop)
 
+auditallow nfc dalvikcache_data_file:file execute;
+
 # NFC device access.
 allow nfc nfc_device:chr_file rw_file_perms;
 

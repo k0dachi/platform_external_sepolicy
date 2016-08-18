@@ -9,6 +9,7 @@ tmpfs_domain(system_server)
 
 # For art.
 allow system_server dalvikcache_data_file:file execute;
+auditallow system_server dalvikcache_data_file:file execute;
 allow system_server dalvikcache_data_file:dir r_dir_perms;
 
 # /data/resource-cache
