@@ -8,6 +8,8 @@ binder_service(radio)
 # Talks to rild via the rild socket.
 unix_socket_connect(radio, rild, rild)
 
+auditallow radio dalvikcache_data_file:file execute;
+
 # Data file accesses.
 allow radio radio_data_file:dir create_dir_perms;
 allow radio radio_data_file:notdevfile_class_set create_file_perms;

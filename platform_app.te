@@ -8,6 +8,9 @@ app_domain(platform_app)
 net_domain(platform_app)
 # Access bluetooth.
 bluetooth_domain(platform_app)
+
+auditallow platform_app dalvikcache_data_file:file execute;
+
 # Read from /data/local/tmp or /data/data/com.android.shell.
 allow platform_app shell_data_file:dir search;
 allow platform_app shell_data_file:file { open getattr read };
